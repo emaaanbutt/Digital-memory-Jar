@@ -1,0 +1,37 @@
+#main-menu{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 17%;
+    width: 50%;
+    top: 10rem;
+    font-size: 1.6rem;
+}
+
+#list{
+    list-style: none;
+    text-align: left;
+}
+
+#list a{
+    text-decoration: none;
+    color: rgb(201, 44, 70);
+}
+
+#list a:hover{
+    color: wheat;
+}
+
+#back-btn{
+    position: absolute;
+    right: 0rem;
+    bottom: -1rem;
+    color: white;
+}
+
+#back-btn:hover{
+    cursor: pointer;
+    color: black;
+}
+

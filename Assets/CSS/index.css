@@ -1,0 +1,46 @@
+body{
+    background-image: url("../Images/TV-Screen.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main-page{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    top: 10rem;
+    display: grid;
+    place-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#welcome{
+    font-size: 1.6rem;
+}
+
+.btn{
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.btn:hover{
+    color: wheat;
+    animation: none;
+    cursor: pointer;
+}
+
+.blink{
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
