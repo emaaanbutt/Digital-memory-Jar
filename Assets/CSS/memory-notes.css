@@ -93,7 +93,16 @@ textarea, input{
     font-size: 1.2rem;
 }
 
-
 .memory-title{
-    
+    position: absolute;
+    top: 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
+
+.memory-desc{
+    position: absolute;
+    top: 7rem;
+    font-size: 1.1rem;
+}
+
