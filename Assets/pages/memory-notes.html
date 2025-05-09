@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Memory Jar</title>
+    <link rel="stylesheet" href="../CSS/memory-notes.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../scripts/memory-jar.js"></script>
+</head>
+<body>
+    <div class="book">
+        <div class="page">Page 1 - Welcome</div>
+        <div class="page">Page 2 - Notes</div>
+        <div class="page">Page 3 - Photos</div>
+        <div class="page">Page 4 - Surprise Jar</div>
+    </div>
+
+    <div class="controls">
+        <button onclick="flipPrev()">⟵ Back</button>
+        <button onclick="flipNext()">Next ⟶</button>
+    </div>
+    <button id="return-btn">
+        Return
+    </button>
+
+    <button id="add-memory">
+        Add memory
+    </button>
+
+    <div id="add-memory-page">
+        <label for="title" >Title</label>
+        <input type="text" id="title" required>
+        <label for="description">Memory</label>
+        <textarea name="memory" id="memory" required></textarea>
+        <label for="image">Image(Optional)</label>
+        <input type="file" name="image" id="image">
+        <button id="Add">Add</button>
+    </div>
+</body>
+</html>

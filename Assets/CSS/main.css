@@ -23,14 +23,15 @@
     color: wheat;
 }
 
-#back-btn{
+#back-btn a{
     position: absolute;
     right: 0rem;
     bottom: -1rem;
     color: white;
+    text-decoration: none;
 }
 
-#back-btn:hover{
+#back-btn a:hover{
     cursor: pointer;
     color: black;
 }

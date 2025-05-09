@@ -1,0 +1,86 @@
+body{
+    background-image: url("../Images/flowers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.book {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  perspective: 1500px;
+  margin: 40px auto;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  backface-visibility: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/note.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+
+.page:nth-child(1) { z-index: 4; }
+.page:nth-child(2) { z-index: 3; }
+.page:nth-child(3) { z-index: 2; }
+.page:nth-child(4) { z-index: 1; }
+
+.page.flipped {
+  transform: rotateY(-180deg) scale(0.98);
+  z-index: 0 !important;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #ff56dacb;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease
+}
+
+
+#add-memory{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#add-memory-page{
+    position: absolute;
+    left: 15%;
+    top: 2rem;
+    width: 70%;
+    height: 450px;
+    border-radius: 25px;
+    background-color: rgb(146, 103, 103);
+    z-index: 9999;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
