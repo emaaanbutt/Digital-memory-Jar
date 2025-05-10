@@ -1,0 +1,41 @@
+body{
+    background-image: url("../Images/add-photo-screen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#add-photo-page{
+    position: absolute;
+    display: grid;
+    top: 45%;
+    left: 20%;
+    place-content: center;
+    gap: 1rem;
+}
+
+#add-btn{
+    position: absolute;
+    top: 13rem;
+    width: 5rem;
+    left: 40%;
+    color:white;
+}
+
+.back-btn{
+    position: absolute;
+    top: -4rem;
+    width: 5rem;
+    left: -1rem;
+    color: white;
+}
+
+
+p{
+    position: absolute;
+    top: 10rem;
+    color: red;
+    font-size: 1.1rem;
+}
+
+
