@@ -106,3 +106,14 @@ textarea, input{
     font-size: 1.1rem;
 }
 
+.edit{
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1rem;
+}
+
+.delete{
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1rem;
+}

@@ -52,6 +52,8 @@ $(function(){
                     ${title}</div>
                     <div class="memory-desc">
                     ${memory}</div>
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
                     </div>`;
 
         book.append(page);
@@ -63,4 +65,29 @@ $(function(){
         $("#add-memory-page").hide();
         
     });
+});
+
+
+$(function(){
+  $(document).on("click",".delete", function(){
+    $(this).parent().remove();
+    localStorage.setItem("book_saved", $(".book").html()); 
+  });
+});
+
+
+$(function(){
+  $(document).on("click", ".edit", function(){
+    const parent = $(this).closest(".page");
+    const title = parent.find(".memory-title").text().trim();
+    const desc = parent.find(".memory-desc").text().trim();
+
+
+    $("#add-memory-page").show();
+
+    $("#title").val(title);
+    $("#memory").val(desc);
+
+    parent.remove();
+  });
 });
