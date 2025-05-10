@@ -1,0 +1,11 @@
+#time-snaps-menu{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 17%;
+    width: 50%;
+    top: 10rem;
+    font-size: 1.6rem;
+
+}
