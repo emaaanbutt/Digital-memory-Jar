@@ -3,10 +3,10 @@ let currentPage = 0;
 $(function(){
   $("#empty-alert").hide();
    let saved_book = localStorage.getItem("book_saved");
-    if (saved_book && $(saved_book).text().trim() !== ""){
-        $(".controls").show();
-        $("#empty-alert").hide();
-        $(".book").html(saved_book);
+    if (saved_book && $('<div>').html(saved_book).text().trim() !== "") {
+    $(".controls").show();
+    $("#empty-alert").hide();
+    $(".book").empty().append($(saved_book));  
 
         $('.page').each(function(index) {
             const total = $('.page').length;
@@ -103,5 +103,7 @@ $(function(){
     $("#memory").val(desc);
 
     parent.remove();
+    localStorage.setItem("book_saved", $(".book").html());
   });
 });
+
