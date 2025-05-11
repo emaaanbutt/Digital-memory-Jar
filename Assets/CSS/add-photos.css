@@ -8,7 +8,7 @@ body{
 #add-photo-page{
     position: absolute;
     display: grid;
-    top: 45%;
+    top: 40%;
     left: 20%;
     place-content: center;
     gap: 1rem;
@@ -16,7 +16,7 @@ body{
 
 #add-btn{
     position: absolute;
-    top: 13rem;
+    top: 11rem;
     width: 5rem;
     left: 40%;
     color:white;
