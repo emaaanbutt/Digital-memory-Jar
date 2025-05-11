@@ -121,6 +121,8 @@ textarea, input{
     position: absolute;
     top: 7rem;
     font-size: 1.1rem;
+    padding: 10px;
+    padding-left: 30px;
 }
 
 .edit{
