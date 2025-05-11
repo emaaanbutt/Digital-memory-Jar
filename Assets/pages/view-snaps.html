@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Memory Jar</title>
+    <link rel="stylesheet" href="../CSS/memory-notes.css">
     <link rel="stylesheet" href="../CSS/view-snaps.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../scripts/view-snaps.js"></script>
 </head>
 <body>
+    <button id="back-btn">Back</button>
+    <div id="alert">
+        <h1>There are no saved snaps.</h1>
+    </div>
     <div id="polaroid-container">
         <svg>
             <path d="M 50 150 Q 250 50, 450 150" stroke="#d483a0" stroke-width="5" fill="none" />
@@ -18,14 +23,13 @@
         <img class="line" id="line1" src="../Images/line.png" alt="line">
         <img class="line" id="line2" src="../Images/line.png" alt="line">
 
-        <div class="polaroid">
-            <div class="snap">
-                <img src="../Images/flowers.png" alt="">
-            </div>
-            <div class="caption">
-                <p>helloo kjbxhbdshbw bwisbdx whds bxwd hdhwdh whx hws wbehxbh</p>
-            </div>
+        <img class="arrow" id="left" src="../Images/left-arrow.png" alt="left arrow">
+        <img class="arrow" id="right" src="../Images/right-arrow.png" alt="right arrow">
+
+        <div id="gallery">
+
         </div>
+        
 
     </div>
 </body>

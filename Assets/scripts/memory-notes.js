@@ -1,14 +1,23 @@
 let currentPage = 0;
 
 $(function(){
+  $("#empty-alert").hide();
    let saved_book = localStorage.getItem("book_saved");
-    if (saved_book){
+    if (saved_book && $(saved_book).text().trim() !== ""){
+        $(".controls").show();
+        $("#empty-alert").hide();
         $(".book").html(saved_book);
 
         $('.page').each(function(index) {
             const total = $('.page').length;
             $(this).css('z-index', total - index);
         });
+    }
+    else
+    {
+      $(".controls").hide();
+      $("#empty-alert").show();
+
     }
 });
 
@@ -63,6 +72,7 @@ $(function(){
         localStorage.setItem("book_saved", book.html());
 
         $("#add-memory-page").hide();
+        $("#empty-alert").hide();
         
     });
 });
@@ -72,6 +82,10 @@ $(function(){
   $(document).on("click",".delete", function(){
     $(this).parent().remove();
     localStorage.setItem("book_saved", $(".book").html()); 
+
+    if ($(".book").text().trim() === ""){
+      $("#empty-alert").show();
+    }
   });
 });
 

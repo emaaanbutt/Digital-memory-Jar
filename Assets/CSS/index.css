@@ -33,6 +33,7 @@ body{
     color: wheat;
     animation: none;
     cursor: pointer;
+    color: rgb(201, 44, 70);
 }
 
 .blink{

@@ -3,6 +3,18 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(240, 141, 116, 0.4); /* white overlay */
+  z-index: -1;
+  pointer-events: none;
 }
 .book {
   position: relative;
@@ -58,6 +70,12 @@ button {
 #add-memory{
     position: absolute;
     right: 1rem;
+    bottom: 1rem;
+}
+
+#return-btn{
+  position: absolute;
+  bottom: 1rem;
 }
 
 #add-memory-page{
@@ -115,4 +133,13 @@ textarea, input{
   position: absolute;
   bottom: 1.2rem;
   right: 1rem;
+}
+
+#empty-alert{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  font-size: 1.3rem;
 }
