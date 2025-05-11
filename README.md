@@ -32,7 +32,14 @@ Delete snaps when you're ready to let go ✨
 🎀 Electron.js – to turn your sweet web app into a real desktop application!
 
 🧁 Screenshots
-(Add cute screenshots of your app here — memory pages, snaps view, etc.)
+<div align="center">
+  <img src="Assets/Images/preview/preview1.png" width="200px" style="margin: 10px;" />
+  <img src="Assets/Images/preview/preview2.png" width="200px" style="margin: 10px;" />
+  <img src="Assets/Images/preview/preview3.png" width="200px" style="margin: 10px;" />
+  <img src="Assets/Images/preview/preview4.png" width="200px" style="margin: 10px;" />
+  <img src="Assets/Images/preview/preview5.png" width="200px" style="margin: 10px;" />
+  <img src="Assets/Images/preview/preview6.png" width="200px" style="margin: 10px;" />
+</div>
 
 🚀 How to Run
 1. Clone the repo
