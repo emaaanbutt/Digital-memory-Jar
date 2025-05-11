@@ -44,12 +44,12 @@ Delete snaps when you're ready to let go ✨
 🚀 How to Run
 1. Clone the repo
 ```bash
-git clone https://github.com/emaaanbutt/digital-memory-jar
+git clone https://github.com/emaaanbutt/Digital-memory-Jar
 ```
 
 2. Navigate into the folder
 ```bash
-cd digital-memory-jar
+cd Digital-memory-Jar
 ```
 
 3. Install dependencies
