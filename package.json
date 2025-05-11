@@ -1,0 +1,23 @@
+{
+  "name": "mothers-day",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emaaanbutt/Digital-memory-Jar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emaaanbutt/Digital-memory-Jar/issues"
+  },
+  "homepage": "https://github.com/emaaanbutt/Digital-memory-Jar#readme",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.2.0"
+  }
+}
